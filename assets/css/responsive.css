@@ -1,0 +1,16 @@
+/* tablet ==================== */
+@media (max-width: 1000px) {
+    
+}
+
+
+/* tablet ==================== */
+@media (max-width: 670px) {
+    .sidenav-icon {
+        display: block;
+    }
+
+    .navbar1-menu {
+        display: none;
+    }
+}

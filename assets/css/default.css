@@ -1,0 +1,177 @@
+/* 
+================================
+DAFTAR ISI
+================================
+1. General
+2. .. 
+================================
+END DAFTAR ISI
+================================
+*/
+
+
+/* --------------------------------
+1. General
+-------------------------------- */
+
+/* container  */
+.container-umum{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media (max-width: 425px){
+    .container-umum{
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
+.container-small{
+    padding-left: 120px;
+    padding-right: 120px;
+}
+@media (max-width: 768px){
+    .container-small{
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+}
+@media (max-width: 425px){
+    .container-small{
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    color: #1c303e;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #808080;
+}
+@media(max-width: 425px){
+    h6 {font-size: 11px;}
+}
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+}
+h5,
+h6 {
+    font-weight: 600;
+}
+p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+a{
+    color:  #999;
+    
+}
+
+a:active, a:hover, a:focus  {
+
+}
+
+/* button  */
+.btn-tosca{
+    width: 100%;
+    padding: 5px;
+    color:  #fff;
+    background: #00a99d;
+    border: none;
+    border-radius: 10px;
+    outline: none!important;
+    cursor: pointer;
+}
+
+.btn-outline-grey{
+    width: 100%;
+    padding: 5px;
+    color:  #808080;
+    background: #fff;
+    border-color: 2px solid #808080;
+    border-radius: 10px;
+    outline: none!important;
+    cursor: pointer;
+}
+@media (max-width: 575px){
+    .btn-outline-grey{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 575px){
+    .btn{
+        font-size: 11px;
+        padding: 5px;
+        /* margin-bottom: 0px; */
+    }
+}
+
+/* align holder */
+.center{
+    text-align: center !important;
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+}
+
+/* float */
+.fl-right{
+    float: right;
+}
+
+.fl-left{
+    float: left;
+}
+
+/* margin */
+.mt-30{
+    margin-top: 30px;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+
+/* utk margin top tepat dibawah navbar */
+.margin-top{
+    margin-top: 65px;
+}
+@media (max-width: 425px){
+    .margin-top{
+        margin-top: 60px;
+    }
+}
+
+/* paddings */
+
