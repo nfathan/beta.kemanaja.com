@@ -18,6 +18,16 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+// filter 
+function openFilter() {
+  document.getElementById("filter").style.display = "block";
+}
+
+function closeFilter() {
+  document.getElementById("filter").style.display = "none";
+}
+
+
 // dropdown
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -37,12 +47,18 @@ function myFunction() {
     }
   }
 
-// modal 
-// Get the modal
-var modal = document.getElementById("myModal");
+// modal login & signup
+function masukModal() {
+  document.getElementById("masukBtn").style.display = "block";
+}
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+function closeModal() {
+  document.getElementById("close").style.display = "none";
+}
+
+var modal = document.getElementById("daftarModal");
+
+var btn = document.getElementById("daftarBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -64,11 +80,70 @@ window.onclick = function(event) {
   }
 }
 
+/*------------------------------------
+  accordion
+--------------------------------------*/
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
+
+/*------------------------------------
+  Menu slide
+--------------------------------------*/  
+function openMenuModal() {
+  document.getElementById("menuModal").style.display = "block";
+}
+
+function closeMenuModal() {
+  document.getElementById("menuModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("menuSlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
 
 /*------------------------------------
     1. Owl Carousel
 --------------------------------------*/  
-
 
 /*---------------------
 Testmonials carousel
