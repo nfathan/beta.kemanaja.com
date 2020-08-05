@@ -1,57 +1,69 @@
-.navbar1 {
-    display: flex;
-    align-items: stretch;
-    background-color: #fff;
-    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.100);
-    line-height: 50px;
+
+* {
+    box-sizing: border-box;
 }
 
-.navbar1 > div {
-    /* background-color: DodgerBlue; */
-    /* color: #f1f1f1; */
-    color: #808080;
-    margin: 5px;
-    text-align: center;
-    /* line-height: 50px; */
+.navbar1 {
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.100);
+    display: flex;
+    width: 100%;
+}
+
+.navbar1 div {
+    flex: auto;
+    align-items: stretch;
+}
+
+.navbar-left {
+    float: left
+}
+
+.navbar-center {
+    float: left;
+}
+
+.navbar-right {
+    float: right;
+    line-height: 60px;
 }
 
 .navbar1-brand{
-    display: inline-block;
     position: relative;
+    line-height: 60px;
+    margin-right: 10px;
 }
 
 .navbar1-brand img{
     max-width: 150px;
-}
-@media (max-width: 425px){
-    .navbar1-brand img{
-        max-width: 130px;
-    }
 }
 
 .navbar1-menu {
     display: block;
 }
 
+.navbar1-menu-home {
+    display: block;
+}
+
 /* navbar search */
 .navbar1-search{
     background: #fff;
-    border-radius: 10px;
-    border: 2px solid #f1f1f1;
-    line-height: 35px;
-    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid #9999;
+    margin: 10px 0;
+    max-width: 500px;
 }
 
-/* * {
-    box-sizing: border-box;
-} */
-
 form.navbar1-search input[type=text]{
-    padding-left: 5px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
     float: left;
-    width: 80%;
+    width: 90%;
     color: #808080;
     background: #fff;
     outline: none;
@@ -59,13 +71,13 @@ form.navbar1-search input[type=text]{
 
 form.navbar1-search button{
     float: left; 
-    width: 20%;
-    padding: 0px;
-    color: #808080;
+    width: 10%;
+    padding: 5px;
+    color: #9999;
     background: #fff;
     border: none;
     border-radius: 10px;
-    border-left: 2px solid #f1f1f1;
+    border-left: 2px solid #9999;
     outline: none;
     cursor: pointer;
 }
@@ -90,10 +102,12 @@ form.navbar1-search::after{
     padding-top: 60px;
 }
 
+.sidenav-content {
+    margin: 10px 20px;
+}
+
 .sidenav a {
-    padding: 8px 8px 8px 0px;
     text-decoration: none;
-    font-size: 20px;
     color: #808080;
     display: block;
     transition: 0.3s;
@@ -106,9 +120,8 @@ form.navbar1-search::after{
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 10px;
     font-size: 36px;
-    margin-left: 50px;
 }
 
 .sidenav-icon{
