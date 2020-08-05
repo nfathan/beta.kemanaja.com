@@ -45,7 +45,7 @@ END DAFTAR ISI
 
 html, body {
     font-family: 'Open Sans', sans-serif;
-    color: #1c303e;
+    color: #858794;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -58,7 +58,7 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
-    color: #808080;
+    color: #2b546a;
 }
 @media(max-width: 425px){
     h6 {font-size: 11px;}
@@ -81,10 +81,8 @@ p{
     font-weight: 400;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-
+li {
+    list-style : none;
 }
 
 a{
@@ -163,15 +161,40 @@ a:active, a:hover, a:focus  {
     margin-top: 60px;
 }
 
+.mb-30{
+    margin-bottom: 30px;
+}
 /* utk margin top tepat dibawah navbar */
 .margin-top{
-    margin-top: 65px;
+    margin-top: 80px;
 }
 @media (max-width: 425px){
     .margin-top{
-        margin-top: 60px;
+        margin-top: 80px;
     }
 }
 
-/* paddings */
+.fa-bars {
+    color: #808080;
+    margin-left: 15px;
+}
 
+.ti-money {
+    padding-right: 10px;
+}
+
+.ti-time {
+    padding-right: 10px;
+}
+
+.ti-location-pin {
+    padding-right: 10px;
+}
+
+.ti-comment {
+    padding-left: 10px;
+}
+
+.ti-clipboard {
+    padding-left: 10px;
+}
