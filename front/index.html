@@ -26,100 +26,108 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 </head>
 <body>
-<header>
 <!-- navbar-->
-<nav class="navbar1 container-umum fixed-top"> 
-    <!-- logo -->
-        <div class="navbar1-brand" style="flex-grow: 1; text-align: left;" >
-        <!-- <a href="index.html">    -->
-            <!-- <img src="../assets/img/logo-white.png" width="30px" alt="logo"> -->
+<header>
+<div class="navbar1 container-umum"> 
+    <div class="navbar-left" style="flex-grow: 1;">
+        <!-- logo -->
+        <div class="navbar1-brand">
+        <a href="index.html">   
             <img src="../assets/img/kemanaja-abu.png" alt="logo">
-        
+        </a>
         </div>
-
-        <!-- links, menu, button -->
-        <!-- <div style="flex-grow: 1;">
-    
-        </div> -->
-
-        <!-- sidenav  -->
-        <div style="flex-grow: 8; text-align: right;">
-            <div class="navbar1-menu">
-                <div class="dropdown" style="text-align: left;">
+    </div>
+    <div class="navbar-center" style="flex-grow: 240;">
+    </div>
+    <div class="navbar-right" style="flex-grow: 1;">
+        <div class="navbar1-menu">
+                <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">BANTUAN <i class="fa fa-caret-down"></i></button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="#">cara menngunakan website</a>
                         <a href="#">cara daftar</a>
                         <a href="#">cara tulis ulasan</a>
-                        </div>
                     </div>
-                <button class="btn btn-outline-info">MASUK</button>
-                <div id="myModal" class="modal center">
+                </div>
+                <button class="btn btn-outline-info" id="masukBtn">MASUK</button>
+                <div id="masukModal" class="modal-masuk center">
                     <div class="modal-login">
-                        <span class="close">&times;</span>
+                        <span id="close" class="close">&times;</span>
                         <img src="../assets/img/kemanaja-abu.png">
-                        <h6>Selamat Datang, Silahkan isi form berikut untuk buat akun anda.</h6>
                         <form method="post" action="#" class="primary-form mt-30">
-                            <input type="text" name="name" placeholder="Alamat E-mail">
-                            <input type="text" name="name" placeholder="Nama Akun">
+                            <input type="text" name="name" placeholder="Alamat E-mail / Nama Akun">
                             <input type="password" name="password" placeholder="Password">
-                            <button type="submit" class="btn-tosca">Daftar</button>
+                            <button type="submit" class="btn-tosca">Masuk</button>
+                            <p>Belum punya akun ? <a href="#">Daftar</a></p>
                         </form>
                     </div>
                 </div>
-                <button class="btn btn-info" id="myBtn">DAFTAR</button>
-                    <div id="myModal" class="modal center">
-                        <div class="modal-login">
-                            <span class="close">&times;</span>
-                            <img src="../assets/img/kemanaja-abu.png">
-                            <h6>Selamat Datang, Silahkan isi form berikut untuk buat akun anda.</h6>
-                            <form method="post" action="#" class="primary-form mt-30">
-                                <input type="text" name="name" placeholder="Alamat E-mail">
-                                <input type="text" name="name" placeholder="Nama Akun">
-                                <input type="password" name="password" placeholder="Password">
-                                <button type="submit" class="btn-tosca">Daftar</button>
-                            </form>
-                        </div>
-                    </div>    
-            </div>
-            <div class="sidenav-icon" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</div>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#"><button class="btn-tosca">Daftar</button></a>
-                    <a href="#">Bantuan</a>
-                    <a href="#">lain2</a>
-                    <a href="#">lain2</a>
-            </div>
+                <button class="btn btn-info" id="daftarBtn">DAFTAR</button>
+                <div id="daftarModal" class="modal-daftar center">
+                    <div class="modal-signup">
+                        <span class="close">&times;</span>
+                        <img src="../assets/img/kemanaja-abu.png">
+                        <form method="post" action="#" class="primary-form mt-30">
+                            <input type="text" name="name" placeholder="Alamat E-mail">
+                            <input type="text" name="name" placeholder="Nama Akun">
+                            <input type="password" name="password" placeholder="Password">                                
+                            <button type="submit" class="btn-tosca">Daftar</button>
+                        </form>
+                    </div>
+                </div>    
         </div>
-        
-    
+        <div class="sidenav-icon" onclick="openNav()"><span class="fa fa-bars"></span></div>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>                    
+                <div class="sidenav-content">
+                    <a class="btn1 btn-masuk-outline" href="#">Masuk</a>
+                    <a class="btn1 btn-daftar" href="#">Daftar</a>
+                    <div class="accordion">Bantuan</div>
+                    <div class="accordion-panel">
+                        <li class="accordion">test</li>
+                        <div class="accordion-panel">    
+                            <li>test 2</li>
+                            <li>test 2</li>
+                            <li>test 2</li>
+                        </div>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        </div>
+                    <a href="#">lain2</a>
+                    <a href="#">lain2</a>
+                </div>
+        </div>
     </div>
-</nav>
+</div>
+
 </header>
 
 <!-- page title -->
 <div class="container-umum">
     <div class="page-title " style="background-image: url('../assets/img/travel.jpg');">
         <h1>Temukan Objek Wisata dan Kuliner</h1>
-    
-            <div class="col-sm-8 offset-sm-2">
+        <div class="search-home">
+            <div class="input-group-search">
                 <form class="input-group-search">
                     <input type="text" placeholder="Mau pergi kemana ?">
-                    <button><i class="fa fa-search"></i></button>
-                    
+                    <button><i class="fa fa-search"></i></button>  
                 </form>
-            
+            </div>
         </div>
-        <p>Klik menu wisata dan kuliner dibawah untuk pencarian detail </p>
-            
-            <div class="page-title-block">
+        <p>Klik menu wisata dan kuliner dibawah untuk pencarian sesuai kategori </p>
+        <div class="page-title-block">
+            <div class="fl-right">
                 <a href="../front/wisata.html"><i class="fa fa-book"></i>
                 <p>Wisata</p>
                 </a>
+            </div>
+            <div class="fl-left">    
                 <a href="../front/kuliner.html"><i class="fa fa-coffee"></i>
                 <p>Kuliner</p>
                 </a>
             </div>
+        </div>
     </div>
 </div>
 
@@ -128,12 +136,10 @@
     <div class="line-heading">
         <span>terpopuler</span>
     </div>
-    <!-- <div class="owl-carousel owl-theme customizable-carousel mt-30" data-items="3"  data-md-items="3" data-sm-items="2" data-xs-items="1" data-space="15"  data-nav-dots="false" data-nav-arrows="true">
-							
+    <div class="owl-carousel owl-theme customizable-carousel mt-30" data-items="3"  data-md-items="3" data-sm-items="2" data-xs-items="1" data-space="15"  data-nav-dots="false" data-nav-arrows="true">										
         <div class="item">
             <img src="../assets/img/sombori.jpg">
         </div>
-        
         <div class="item">
             <img src="../assets/img/kaledo.jpg">
         </div>	
@@ -149,7 +155,7 @@
         <div class="item">
             <img src="../assets/img/tanjung-karang.jpg">
         </div>									
-    </div> -->
+    </div>
 
     <div class="row">   
         <div class="col-sm-4">
@@ -165,7 +171,7 @@
                         <i class="fa fa-star"></i>
                         4.3/5
                     </h5>
-                    <h4><a href="../front/ulasan.html">Morowali, Pantai Sombori Island</a></h4>
+                    <h4><a href="../front/ulasan-wisata.html">Morowali, Pantai Sombori Island</a></h4>
                 </div>
             </div>
         </div>
@@ -182,7 +188,7 @@
                         <i class="fa fa-star"></i>
                         4.3/5
                     </h5>
-                    <h4>Palu, Warung Kaledo </h4>
+                    <h4><a href="../front/ulasan-kuliner.html">Palu, Warung Kaledo </a></h4>
                 </div>
             </div>
         </div>
@@ -213,11 +219,6 @@
         <div class="row">
             <div class="col-6 col-sm-3">
                 <img src="../assets/img/kemanaja.png" alt="logo"> 
-                <div class="footer-link">
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Kontak</a></li>
-                    <li><a href="#">Gabung</a></li>
-                </div>
             </div>
             <div class="col-6 col-sm-3">
                 <h3>telusuri</h3>
