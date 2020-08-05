@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tulis Ulasan</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/img/logo-grey.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1,">    
+
+    <!-- boostrap -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/boostrap.min.css">
+
+    <!-- themify icons -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome-all.css">
+
+    <!-- icomoon -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/icomoon.css">
+
+    <!-- navigation  -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/navigation.css">
+
+    <!-- responsive  -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+
+    <!-- main styles  -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/default.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+</head>
+<body>
+
+<!-- navbar-->
+<header>
+<div class="navbar1 container-umum"> 
+    <div class="navbar-left" style="flex-grow: 1;">
+        <!-- logo -->
+        <div class="navbar1-brand">
+        <a href="index.html">   
+            <img src="../assets/img/kemanaja-abu.png" alt="logo">
+        </a>
+        </div>
+    </div>
+    <div class="navbar-center" style="flex-grow: 240;">
+        <form class="navbar1-search" >
+            <input type="text" placeholder="Cari..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="navbar-right" style="flex-grow: 1;">
+        <div class="navbar1-menu">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">BANTUAN <i class="fa fa-caret-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">cara menngunakan website</a>
+                        <a href="#">cara daftar</a>
+                        <a href="#">cara tulis ulasan</a>
+                    </div>
+                </div>
+                <button class="btn btn-outline-info" id="myBtn">MASUK</button>
+                <div id="myModal" class="modal center">
+                    <div class="modal-login">
+                        <span class="close">&times;</span>
+                        <img src="../assets/img/kemanaja-abu.png">
+                        <form method="post" action="#" class="primary-form mt-30">
+                            <input type="text" name="name" placeholder="Alamat E-mail / Nama Akun">
+                            <input type="password" name="password" placeholder="Password">
+                            <button type="submit" class="btn-tosca">Masuk</button>
+                        </form>
+                    </div>
+                </div>
+                <button class="btn btn-info" id="myBtn">DAFTAR</button>
+                <div id="myModal" class="modal center">
+                    <div class="modal-login">
+                        <span class="close">&times;</span>
+                        <img src="../assets/img/kemanaja-abu.png">
+                        <form method="post" action="#" class="primary-form mt-30">
+                            <input type="text" name="name" placeholder="Alamat E-mail">
+                            <input type="text" name="name" placeholder="Nama Akun">
+                            <input type="password" name="password" placeholder="Password">                                
+                            <button type="submit" class="btn-tosca">Daftar</button>
+                        </form>
+                    </div>
+                </div>    
+        </div>
+        <div class="sidenav-icon" onclick="openNav()"><span class="fa fa-bars"></span></div>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>                    
+                <div class="sidenav-content">
+                    <a class="btn1 btn-masuk-outline" href="#">Masuk</a>
+                    <a class="btn1 btn-daftar" href="#">Daftar</a>
+                    <a href="#">Bantuan</a>
+                    <a href="#">lain2</a>
+                    <a href="#">lain2</a>
+                </div>
+        </div>    
+    </div>
+</div>
+</header>
+
+<!-- url page title  -->
+<div class="margin-top"></div>
+
+<div class="tulis-ulasan">
+    <div class="container-umum">
+    <h2>Kaledo ... </h2>
+    <p><a href="#">Baca petunjuk review kami</a></p>
+        <div class="tulis">
+            <div class="rating-wrapper">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                Rasa
+            </div>
+            <div class="rating-wrapper">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                Pelayanan
+            </div>
+            <div class="rating-wrapper">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                Suasana
+            </div>
+            <div class="rating-wrapper">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                Kebersihan
+            </div>
+            <form>
+                <textarea>
+                tulis review anda disisini
+                </textarea>
+            </form>
+        </div>
+    <button class="btn1 btn-posting" type="submit">Posting Review</a>
+    </div>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container-umum">
+        <div class="row">
+            <div class="col-6 col-sm-3">
+                <img src="../assets/img/kemanaja.png" alt="logo"> 
+                
+            </div>
+            <div class="col-6 col-sm-3">
+                <h3>telusuri</h3>
+                <div class="footer-link">
+                    <li><a href="#">Bantuan</a></li>
+                    <li><a href="#">Tulis Ulasan</a></li>
+                </div> 
+            </div>
+            <div class="col-6 col-sm-3">
+                <h3>berbisnis </h3>
+                <div class="footer-link">
+                    <li><a href="#">Beriklan Dengan Kami</a></li>
+                    <li><a href="#">Penempatan Sponsor</a></li>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <h3>ikuti kami</h3>
+                <div class="footer-social-link">
+                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                </div>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p>© Kemanaja.com 2020 - <a href="#">Kebijakan Privasi</a></p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Main JS -->
+<script src="../assets/js/main.js"></script>
+</body>
+
+</html>

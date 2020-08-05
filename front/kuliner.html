@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kuliner</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assets/img/logo-grey.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1,">    
+
+    <!-- boostrap -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/boostrap.min.css">
+
+    <!-- themify icons -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/fontawesome-all.css">
+
+    <!-- navigation  -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/navigation.css">
+
+    <!-- responsive  -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+
+    <!-- main styles  -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/default.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+</head>
+<body>
+
+<!-- navbar-->
+<header>
+<div class="navbar1 container-umum"> 
+    <div class="navbar-left" style="flex-grow: 1;">
+        <!-- logo -->
+        <div class="navbar1-brand">
+        <a href="index.html">   
+            <img src="../assets/img/kemanaja-abu.png" alt="logo">
+        </a>
+        </div>
+    </div>
+    <div class="navbar-center" style="flex-grow: 240;">
+        <form class="navbar1-search" >
+            <input type="text" placeholder="Cari..">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class="navbar-right" style="flex-grow: 1;">
+        <div class="navbar1-menu">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">BANTUAN <i class="fa fa-caret-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">cara menngunakan website</a>
+                        <a href="#">cara daftar</a>
+                        <a href="#">cara tulis ulasan</a>
+                    </div>
+                </div>
+                <button class="btn btn-outline-info" id="myBtn">MASUK</button>
+                <div id="myModal" class="modal center">
+                    <div class="modal-login">
+                        <span class="close">&times;</span>
+                        <img src="../assets/img/kemanaja-abu.png">
+                        <form method="post" action="#" class="primary-form mt-30">
+                            <input type="text" name="name" placeholder="Alamat E-mail / Nama Akun">
+                            <input type="password" name="password" placeholder="Password">
+                            <button type="submit" class="btn-tosca">Masuk</button>
+                        </form>
+                    </div>
+                </div>
+                <button class="btn btn-info" id="myBtn">DAFTAR</button>
+                <div id="myModal" class="modal center">
+                    <div class="modal-login">
+                        <span class="close">&times;</span>
+                        <img src="../assets/img/kemanaja-abu.png">
+                        <form method="post" action="#" class="primary-form mt-30">
+                            <input type="text" name="name" placeholder="Alamat E-mail">
+                            <input type="text" name="name" placeholder="Nama Akun">
+                            <input type="password" name="password" placeholder="Password">                                
+                            <button type="submit" class="btn-tosca">Daftar</button>
+                        </form>
+                    </div>
+                </div>    
+        </div>
+        <div class="sidenav-icon" onclick="openNav()"><span class="fa fa-bars"></span></div>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>                    
+                <div class="sidenav-content">
+                    <a class="btn1 btn-masuk-outline" href="#">Masuk</a>
+                    <a class="btn1 btn-daftar" href="#">Daftar</a>
+                    <a href="#">Bantuan</a>
+                    <a href="#">lain2</a>
+                    <a href="#">lain2</a>
+                </div>
+        </div>    
+    </div>
+</div>
+</header>
+
+<!-- url page title  -->
+<div class="margin-top"></div>
+<div class="url-page">
+    <div class="container-umum">
+        <ul>
+            <li><a href="#">Sulawesi Tengah</a></li>
+            <li><a href="#">Palu</a></li>
+            <li>Kuliner</li>
+        </ul>
+    </div>
+</div>
+
+<!-- galeri kuliner  -->
+<div class="container-umum">
+    <!-- section filter -->
+    <div class="filter center">
+        <a class="btn1 btn-filter" href="javascript:void(0)" style="cursor:pointer" onclick="openFilter()">Filter</a>
+    </div>
+    <div class="mobile-filter" id="filter">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeFilter()">&times;</a>
+        <a class="btn1 btn-filter" class="clear" href="javascript:void(0)" onclick="closeFilter()">Hapus Semua Filter</a>
+        <div class="mobile-filter-content">            
+            <h6>Pilih Kategori</h6>
+            <label class="checkbox">Restoran
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Pesan Antar
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Cofee
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Kaki Lima
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">bla-bla
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <div class="line-heading-small">
+                <span></span>
+            </div>
+            <h6>Pilih Kategori</h6>
+            <label class="checkbox">Restoran
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Pesan Antar
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Cofee
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Kaki Lima
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">bla-bla
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <div class="line-heading-small">
+                <span></span>
+            </div>
+            <h6>Pilih Kategori</h6>
+            <label class="checkbox">Restoran
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Pesan Antar
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Cofee
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Kaki Lima
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">bla-bla
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <div class="line-heading-small">
+                <span></span>
+            </div>
+            <h6>Pilih Kategori</h6>
+            <label class="checkbox">Restoran
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Pesan Antar
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Cofee
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Kaki Lima
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">bla-bla
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </label>
+            
+        </div>
+        <div class="filter-inside center">
+        <a class="btn1 btn-filter" href="javascript:void(0)" onclick="closeFilter()">Lihat Hasil Filter</a>
+        </div>
+    </div>
+    <div class="row">
+        <!-- left side -->
+        <div class="col-sm-9">
+            <div class="section-tag">
+                <span class="tag">Kuliner Favorit </span>
+                <span class="tag">Kuliner Baru Buka </span>
+                <span class="tag">Kuliner ... </span>
+            </div>
+        </div>
+        <!-- right side -->
+        <div class="col-sm-3 section-filter-btn">
+            <div class="center">
+                <a class="btn1 btn-filter-outline fl-left" href="#">Simpan Pencarian</a>  
+                <a class="btn1 btn-filter-outline fl-right" href="#">Hapus Semua Filter</a>
+            </div>
+        </div>
+    </div>
+
+        <div class="row mt-30">
+            <!-- left side -->
+            <div class="col-xl-9">
+                
+                <div  class="row">
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/sombori.jpg">
+                            <div class="box-image-inner">
+                                <h6>kuliner</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Morowali, Pantai Sombori Island</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/kaledo.jpg">
+                            <div class="box-image-inner">
+                                <h6>kuliner</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Palu, Warung Kaledo </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/sombori.jpg">
+                            <div class="box-image-inner">
+                                <h6>wisata</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Morowali, Pantai Sombori Island</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/kaledo.jpg">
+                            <div class="box-image-inner">
+                                <h6>kuliner</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Palu, Warung Kaledo </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/sombori.jpg">
+                            <div class="box-image-inner">
+                                <h6>wisata</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Morowali, Pantai Sombori Island</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/kaledo.jpg">
+                            <div class="box-image-inner">
+                                <h6>kuliner</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Palu, Warung Kaledo </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/sombori.jpg">
+                            <div class="box-image-inner">
+                                <h6>wisata</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Morowali, Pantai Sombori Island</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/kaledo.jpg">
+                            <div class="box-image-inner">
+                                <h6>kuliner</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Palu, Warung Kaledo </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/sombori.jpg">
+                            <div class="box-image-inner">
+                                <h6>wisata</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Morowali, Pantai Sombori Island</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box-image">
+                            <img src="../assets/img/kaledo.jpg">
+                            <div class="box-image-inner">
+                                <h6>kuliner</h6>
+                                <h5>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                    4.3/5
+                                </h5>
+                                <h4>Palu, Warung Kaledo </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- load more -->
+                <div class="center mt-30">
+                    <button class="btn btn-outline-info">Lihat Lainnya</button>
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div class="col-xl-3 section-filter">
+            <div class="box-filter">
+                <div class="row">
+                    <div class="col">
+                        <h6>Pilih Kategori</h6>
+                            <label class="checkbox">Restoran
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">Pesan Antar
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">Cofee
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">Kaki Lima
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">bla-bla
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="line-heading-small">
+                            <span></span>
+                        </div>
+                        <h6>Pilih Lokasi</h6>
+                            <label class="checkbox">Palu
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">Luwuk
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">Toli-Toli
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">Morowali
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox">Poso
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+<!-- section populer -->
+<!-- <div class="container-umum">
+    <div class="line-heading">
+        <span>terpopuler</span>
+    </div>
+    <div class="row">   
+        <div class="col-sm-4">
+            <div class="box-image">
+                <img src="../assets/img/sombori.jpg">
+                <div class="box-image-inner">
+                    <h6>wisata</h6>
+                    <h5>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        4.3/5
+                    </h5>
+                    <h4>Morowali, Pantai Sombori Island</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="box-image">
+                <img src="../assets/img/kaledo.jpg">
+                <div class="box-image-inner">
+                    <h6>kuliner</h6>
+                    <h5>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        4.3/5
+                    </h5>
+                    <h4>Palu, Warung Kaledo </h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="box-image">
+                <img src="../assets/img/tanjung-karang.jpg">
+                <div class="box-image-inner">
+                    <h6>wisata</h6>
+                    <h5>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        4.3/5
+                    </h5>
+                    <h4>Palu, Pantai Tanjung Karang</h4>
+                </div>
+            </div>
+        </div>    
+    </div>
+</div> -->
+
+        
+<!-- footer -->
+<footer class="footer">
+    <div class="container-umum">
+        <div class="row">
+            <div class="col-6 col-sm-3">
+                <img src="../assets/img/kemanaja.png" alt="logo"> 
+                
+            </div>
+            <div class="col-6 col-sm-3">
+                <h3>telusuri</h3>
+                <div class="footer-link">
+                    <li><a href="#">Bantuan</a></li>
+                    <li><a href="#">Tulis Ulasan</a></li>
+                </div> 
+            </div>
+            <div class="col-6 col-sm-3">
+                <h3>berbisnis </h3>
+                <div class="footer-link">
+                    <li><a href="#">Beriklan Dengan Kami</a></li>
+                    <li><a href="#">Penempatan Sponsor</a></li>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <h3>ikuti kami</h3>
+                <div class="footer-social-link">
+                    <li><a href="#"><i class="ti-instagram"></i></a></li>
+                    <li><a href="#"><i class="ti-facebook"></i></a></li>
+                    <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                </div>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p>© Kemanaja.com 2020 - <a href="#">Kebijakan Privasi</a></p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Main JS -->
+<script src="../assets/js/main.js"></script>
+</body>
+
+</html>
